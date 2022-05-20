@@ -1,0 +1,156 @@
+header {
+  background: #2d70ff;
+  height: 4.2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+      grid-template-columns: 50px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 20px;
+  position: relative;
+}
+
+header .logo {
+  background: #fff;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+}
+
+header nav .LSup {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  gap: 5px;
+}
+
+header nav .LSup button {
+  background: #fff;
+  padding: 7px 17px;
+  max-width: 100px;
+  min-width: 100px;
+  border-radius: 30px;
+  color: #2d70ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header nav .LSup button:hover {
+  background: transparent;
+  border: 2px solid #00A6FB;
+  color: #fff;
+}
+
+header nav .LSup button:last-child {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+header nav .LSup button:last-child:hover {
+  background: #fff;
+  color: #00A6FB;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header nav ul a {
+  color: #fff;
+  padding: 10px;
+  margin: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50px 2fr 1fr;
+        grid-template-columns: 50px 2fr 1fr;
+  }
+  header .hamburger {
+    position: static;
+    display: block;
+    justify-self: flex-end;
+  }
+  nav ul {
+    position: absolute;
+    display: none !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+    padding-left: 20px;
+    background-color: #000;
+    height: calc(100vh - 4.2rem);
+    width: 70%;
+    right: 0;
+    top: 100%;
+  }
+  nav ul a {
+    font-size: 1.5rem;
+  }
+  nav ul .LSup {
+    margin-right: 15px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3px;
+  }
+  nav ul .LSup button {
+    background: #fff;
+    padding: 7px 17px;
+    max-width: 50%;
+    min-width: 50%;
+    border-radius: 30px;
+    color: #2d70ff;
+    font-weight: bold;
+  }
+  nav ul .LSup button:last-child {
+    margin-left: 1px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/*# sourceMappingURL=Navbar.css.map */

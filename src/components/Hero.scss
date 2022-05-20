@@ -1,0 +1,83 @@
+@import url('http://fonts.cdnfonts.com/css/chicago-police');
+                
+.hero {
+    height: calc(100vh - 4.2rem);
+    background: linear-gradient(to right bottom ,rgb(4, 139, 230), rgb(216, 240, 255));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
+    padding: 0 60px;
+    color: #fff;
+
+    .left {
+        max-width: 100%;
+        h1 {
+            font-family: 'Chicago Police';
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            word-break:keep-all;
+            max-width: 3ch;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+
+            
+        }
+
+        p{width: 100%; margin-bottom: 50px;}
+    }
+
+    .right {
+        // justify-self: flex-end;
+        img {
+    width: 100%;
+}
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        gap: 20px;
+        .left {
+            h1 {
+                font-size:1.9rem;
+            }
+        }
+        .right {
+            img {}
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        background: rgba(1, 100, 167, 0.986) url('../assets/hero.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-blend-mode: overlay;
+        .left {
+            text-align: center;
+            word-break: normal;
+            h1 {
+                font-size:1.9rem;
+                max-width: 100%;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                font-size: 1.3rem;
+            }
+        }
+        .right {
+            display: none;
+            img {
+                position: absolute;
+                left: 0;top: 0;
+            }
+        }
+    }
+}

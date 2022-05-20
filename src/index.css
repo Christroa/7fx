@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.4s cubic-bezier(0.32, -0.57, 0.57, 1.21);
+  transition: all 0.4s cubic-bezier(0.32, -0.57, 0.57, 1.21);
+}
+
+.container {
+  position: relative;
+  max-width: 1240px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1rems;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  background: #fff;
+  min-width: 100px;
+  border-radius: 30px;
+  color: #2d70ff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 14px 32px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.25) 0px 8px 24px;
+          box-shadow: rgba(255, 255, 255, 0.25) 0px 8px 24px;
+}
+
+input {
+  padding: 12px 32px;
+  border: 1px solid #333;
+  background: transparent;
+  border-radius: 24px 4px;
+  font-size: 1rem;
+  margin-right: 0.8rem;
+  font-family: Poppins;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 1.5eem;
+    line-height: 1.2;
+  }
+  h5 {
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 1rem;
+  }
+  input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

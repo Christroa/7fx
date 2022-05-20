@@ -1,0 +1,142 @@
+header {
+    background: rgb(45, 112, 255);
+    height: 4.2rem;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    justify-content:flex-end;
+    padding: 0 20px;
+    position: relative;
+
+    .logo {
+        background: #fff;
+        img {
+            width: 100%;
+            // color: #fff;
+        }
+    }
+    nav {
+        display: flex;
+        justify-self: flex-end;
+        // margin-left: 100px;
+        // width: 100%;
+
+        .LSup {
+            margin-left: 15px;
+            display: flex;
+            align-items: center !important;
+            gap: 5px;
+
+            button {
+                background: #fff;
+                padding: 7px 17px;
+                max-width: 100px;
+                min-width: 100px;
+                border-radius: 30px;
+                color: rgb(45, 112, 255);
+                font-weight: bold;
+                cursor: pointer;
+
+                &:hover {
+                    background: transparent;
+                    border: 2px solid #00A6FB;
+                    color: #fff;
+                }
+
+                &:last-child {
+                    background: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+
+                    &:hover {
+                        background: #fff;
+                        // border: 2px solid #00A6FB;
+                        color: #00A6FB;
+                    }
+                }
+            }
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+                        
+
+        a {
+            color: #fff;
+            padding: 10px;
+            margin: 2px;
+        }
+
+       
+    }
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    header {
+        display: grid;
+        grid-template-columns: 50px 2fr 1fr;
+
+        .hamburger {
+            position: static;
+            display: block;
+            justify-self: flex-end;
+        }
+    }
+    nav {
+        ul {
+            position: absolute;
+            display: none !important;
+            flex-direction: column;
+            justify-content:center !important;
+            align-items: center;
+            gap: 40px;
+            padding-left: 20px;
+            background-color: #000;
+            height: calc(100vh - 4.2rem);
+            width: 70%;
+            right: 0;
+            top: 100%;
+            a {
+                font-size: 1.5rem;
+            }
+
+
+              
+            
+            .LSup {
+                margin-right: 15px !important;
+                display: flex;
+                gap: 3px;
+                
+
+                button {
+                    background: #fff;
+                    padding: 7px 17px;
+                    max-width: 50%;
+                    min-width: 50%;
+                    border-radius: 30px;
+                    color: rgb(45, 112, 255);
+                    font-weight: bold;
+
+                    &:last-child {
+                        margin-left: 1px;
+                        background: transparent;
+                        border: 1px solid #fff;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.hamburger {
+    display: none;
+
+}
+.show {
+    display: flex !important;
+}
